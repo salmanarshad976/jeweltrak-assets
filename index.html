@@ -18,7 +18,7 @@
 </td></tr></table>
 </td>
 </tr>
-<tr><td colspan="2" width="760" style="padding:0;line-height:0;font-size:0;"><img src="https://raw.githubusercontent.com/salmanarshad976/jeweltrak-assets/main/images/footer-wave.png" width="760" height="79" alt="" border="0" style="display:block;border:0;outline:none;text-decoration:none;width:760px;height:79px"></td></tr>
+<tr><td colspan="2" width="760" style="padding:0;line-height:0;font-size:0;"><img src="https://raw.githubusercontent.com/salmanarshad976/jeweltrak-assets/main/images/footer-wave.png" width="760" height="83" alt="" border="0" style="display:block;border:0;outline:none;text-decoration:none;width:760px;height:83px"></td></tr>
 </table></div></div><div class="actions"><button type="button" class="copy" id="copyButton">Copy signature</button><a class="textlink" href="signature.html" target="_blank" rel="noopener">Open signature only ↗</a></div><div class="instructions"><h2>Installation</h2><ol><li>Click <b>Copy signature</b> above.</li><li>In Gmail or Outlook, open the signature settings and paste into the signature editor.</li><li>Send a test email to verify image loading, sizing, and clickable links. Some email clients may block remote images until the recipient allows them.</li></ol><p>GitHub source: <a href="https://github.com/salmanarshad976/jeweltrak-assets">jeweltrak-assets</a>.</p></div></main>
 <script>
 document.getElementById("copyButton").addEventListener("click",async function(){
@@ -27,7 +27,7 @@ document.getElementById("copyButton").addEventListener("click",async function(){
  let ok=false;
  try{ok=document.execCommand("copy");}catch(e){}
  if(!ok&&navigator.clipboard&&window.ClipboardItem){
- try{const html=el.innerHTML;text=el.innerText;await navigator.clipboard.write([new ClipboardItem({"text/html":new Blob([html],{type:"text/html"}),"text/plain":new Blob([text],{type:"text/plain"})})]);ok=true;}catch(e){}
+ try{const html=el.innerHTML,text=el.innerText;await navigator.clipboard.write([new ClipboardItem({"text/html":new Blob([html],{type:"text/html"}),"text/plain":new Blob([text],{type:"text/plain"})})]);ok=true;}catch(e){}
  }
  if(ok){btn.textContent="Copied — paste into email settings";selection.removeAllRanges();}else{btn.textContent="Signature selected — press Ctrl/Cmd+C";}
 });
